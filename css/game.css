@@ -1,0 +1,14 @@
+p.win {
+  background-color: green !important;
+}
+p.draw {
+  background-color: purple;
+}
+p.lose {
+  background-color: red;
+}
+.results {
+  height: 80vh;
+  /* justify-content: center; */
+  text-align: left;
+}

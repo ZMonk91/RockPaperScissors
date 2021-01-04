@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="./css/game.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   
+
+    <title>Title!</title>
+</head>
+
+<body class="bg-dark text-white justify-content-center">
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand " href="#">Modern Rock/Paper/Scissors</a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container-fluid row">
+        <div class="col-md-4">
+            <h1 class="display-3">Player</h1>
+            <p id="player-subtitle" class="lead">Please Choose A Selection Below<br>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div id='pRock' class="btn-group player-btn me-2" role="group" aria-label="Rock">
+                    <button type="button" class="btn btn-primary">Rock</button>
+                </div>
+                <div id='pPaper' class="btn-group player-btn me-2" role="group" aria-label="Paper">
+                    <button type="button" class="btn btn-primary">Paper</button>
+                </div>
+                <div id='pScissors' class="btn-group player-btn me-2" role="group" aria-label="Scissors">
+                    <button type="button" class="btn btn-primary">Scissors</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <h1 class="display-3">Computer</h1>
+            <p id="computer-subtitle" class="lead">Waiting for your selection ...<br>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div  class="btn-group me-2" role="group" aria-label="Rock">
+                    <button id='cRock' type="button" class="btn btn-disabled">Rock</button>
+                </div>
+                <div  class="btn-group me-2" role="group" aria-label="Paper">
+                    <button id='cPaper' type="button" class="btn btn-disabled">Paper</button>
+                </div>
+                <div  class="btn-group me-2" role="group" aria-label="Scissors">
+                    <button id='cScissors' type="button" class="btn btn-disabled">Scissors</button>
+                </div>
+            </div>
+        </div>
+        <div id='results-page' class="col-md-3 overflow-auto results">
+            <h1 class="display-3">Results</h1>
+            <p id="waiting-text">Waiting for your first game...</p>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+        <script src="../Rock-Paper-Scissors//js/game.js"></script>
+
+</body>
+
+</html>
